@@ -1,0 +1,134 @@
+/* Base Typography */
+*,
+body {
+	font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052,
+		serif;
+	line-height: 1.61;
+	letter-spacing: 0.03em;
+	color: var(--d);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+	margin: var(--gs) 0;
+}
+
+h1 {
+	font-size: var(--g3);
+	font-weight: 100;
+}
+h2 {
+	font-size: var(--g2);
+	font-weight: 100;
+}
+h3,
+h4 {
+	font-size: var(--g1);
+	font-weight: 100;
+}
+
+/* Text Elements */
+p,
+a,
+button,
+label,
+input,
+textarea {
+	font-size: var(--g0);
+	margin: var(--gs) 0;
+}
+
+p {
+	max-width: 36em;
+}
+
+/* Links & Buttons */
+a,
+button,
+input[type='submit'] {
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.1s;
+	color: var(--d);
+}
+
+.btn,
+button,
+input[type='submit'] {
+	background-color: var(--l);
+	padding: var(--gs) var(--g0);
+	border: 2px solid;
+	border-color: var(--lr) var(--dr) var(--dr) var(--lr);
+}
+
+/* Hover & Focus States */
+a:hover,
+a:focus,
+button:hover,
+button:focus,
+input[type='submit']:hover,
+input[type='submit']:focus {
+	transform: skew(-3deg);
+	transform-origin: bottom left;
+}
+
+a:hover,
+a:focus {
+	color: var(--lr);
+}
+
+.btn:hover {
+	color: var(--d);
+}
+
+/* Inline Links */
+p a {
+	text-decoration: underline;
+}
+
+p a:hover,
+p a:focus {
+	text-decoration-color: var(--lr);
+}
+
+/* Link with Span */
+a span {
+	padding: 0 calc(var(--gs) / 4);
+	transition: all 0.1s;
+}
+
+a:hover span {
+	padding-left: calc(var(--gs) / 2);
+	padding-right: 0;
+	color: var(--lr);
+}
+
+/* Forms */
+input,
+textarea {
+	background-color: var(--l);
+	padding: var(--gs) var(--g0);
+	border: var(--d) 2px solid;
+}
+
+input:focus,
+textarea:focus {
+	border: var(--dr) 2px solid;
+	box-shadow: none;
+	outline: none;
+}
+
+/* Utility Classes */
+.italic {
+	font-style: italic;
+}
+.bold {
+	font-weight: 900;
+}
+.small {
+	font-size: var(--gs);
+	max-width: 56em;
+}

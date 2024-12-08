@@ -1,0 +1,58 @@
+/* home section */
+#home {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: var(--g4) var(--g1);
+	border-bottom: 3px solid var(--dr);
+}
+
+#H {
+	height: var(--g4);
+	float: left;
+}
+
+#nav {
+	text-align: left;
+	max-width: 24em;
+}
+
+#nav a {
+	font-size: var(--g1);
+	color: var(--lr);
+}
+
+#nav a:hover {
+	color: var(--dr);
+}
+
+.navHd {
+	max-height: var(--g1);
+}
+
+.inline {
+	white-space: nowrap;
+}
+
+/* Second section - text & countdown with roman numerals */
+#current_experiment {
+	min-height: 80vh;
+	border-bottom: 3px solid var(--dr);
+	padding: var(--g4) var(--g1);
+}
+
+#current_experiment a {
+	font-style: italic;
+}
+
+#countdown {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: none;
+	color: var(--dr);
+}
+
+/* Third section */
+#nHacc img {
+	max-height: var(--g2);
+}
